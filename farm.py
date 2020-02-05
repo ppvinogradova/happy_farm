@@ -33,12 +33,21 @@ class birds(animals):
 
 class geese(birds):
     sound = 'Гаа'
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
 
 class chics(birds):
     sound = 'Кококо'
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
 
 class ducks(birds):
     sound = 'Кря'
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
     
 class mammals(animals):
     milk_status = 'in process'
@@ -53,9 +62,15 @@ class mammals(animals):
 
 class cows(mammals):
     sound = 'Myyy'
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
 
 class goats(mammals):
     sound = 'Mee'
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
 
 class woolen(animals):
     wool_status = 'in process'  
@@ -70,42 +85,26 @@ class woolen(animals):
 
 class sheep(woolen):
     sound = 'Беее'
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
 
 
-goose0 = geese()
-goose0.name = 'Серый'
-goose0.weight = 6.5 #kg
-goose1 = geese()
-goose1.name = 'Белый'
-goose1.weight = 7.0 #kg
+goose0 = geese('Серый', 6.5)
+goose1 = geese('Белый', 7.0)
 
-cow0 = cows()
-cow0.name = 'Манька'
-cow0.weight = 550.0 #kg
+cow0 = cows('Манька', 550.0)
 
-sheep0 = sheep()
-sheep0.name = 'Барашек'
-sheep0.weight = 80.6 #kg
-sheep1 = sheep()
-sheep1.name = 'Кудрявый'
-sheep1.weight = 94.0 #kg
+sheep0 = sheep('Барашек', 80.6)
+sheep1 = sheep('Кудрявый', 94.0)
 
-chic0 = chics()
-chic0.name = 'Ко-ко'
-chic0.weight = 1.2 #kg
-chic1 = chics()
-chic1.name = 'Кукареку'
-chic1.weight = 1.1 #kg
+chic0 = chics('Ко-ко', 1.2)
+chic1 = chics('Кукареку', 1.1)
 
-goat0 = goats()
-goat0.name = 'Рога'
-goat0.weight = 52.7 #kg
-goat1 = goats()
-goat1.name = 'Копыта'
-goat1.weight = 56.3 #kg
+goat0 = goats('Рога', 52.7)
+goat1 = goats('Копыта', 56.3)
 
-duck0 = ducks()
-duck0.name = 'Кряква'
-duck0.weight = 3.4 #kg
+duck0 = ducks('Кряква', 3.4)
+
 count_weight(goose0, goose1, cow0, sheep0, sheep1, chic0, chic1, goat0, goat1, duck0)
 
